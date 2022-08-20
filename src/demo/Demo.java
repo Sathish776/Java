@@ -18,5 +18,10 @@ public class Demo {
 		
 		System.out.println(E.lastIndexOf("8"));
 	}
+	
+		public void Name() {
+			System.out.println("sathesh");
+		
+	}
 
 }
