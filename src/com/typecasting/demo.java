@@ -1,21 +1,34 @@
 package com.typecasting;
 
+import java.util.Scanner;
+
+import com.loopstatements.While_Loop;
+
 public class demo {
 	public static void main(String[] args) {
-		int a=1000;
-		byte b=(byte) a;
-		System.out.println(b);
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter number");
+		int val=s.nextInt();
+		int len=String.valueOf(val).length();
+		int arm=0;
+		int rem;
+		int val1=val;
 		
 		
-		
-		int a1=1000;
-		char c=(char) a1;
-		System.out.println(c);
-		
-		
-		byte f=10;
-		int n=f;
-		
+		while (val>0) {
+			rem=val%10;
+			arm=arm+(int)Math.pow(rem, len);
+			val=val/10;
+			
+		}
+		if (val1==arm) {
+			System.out.println("its arm");
+			
+		}
+		else {
+			System.out.println("its not armstrong");
+		}
 	}
 
 }
